@@ -28,31 +28,31 @@
 	];
 </script>
 
-<div class="w-64 bg-white border-r border-gray-200 flex flex-col">
+<div class="flex w-64 flex-col border-r border-gray-200 bg-white">
 	<!-- Logo Section -->
-	<div class="p-4 border-b border-gray-200">
+	<div class="border-b border-gray-200 p-4">
 		<div class="flex items-center space-x-2">
-			<div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-				<span class="text-white text-sm font-bold">C</span>
+			<div class="flex h-8 w-8 items-center justify-center rounded-full bg-black">
+				<span class="text-sm font-bold text-white">A</span>
 			</div>
 			<span class="font-semibold text-gray-900">Codename.com</span>
-			<div class="w-3 h-3 bg-gray-400 rounded-sm ml-auto"></div>
+			<div class="ml-auto h-3 w-3 rounded-sm bg-gray-400"></div>
 		</div>
 	</div>
 
 	<!-- Navigation Section -->
 	<div class="flex-1 overflow-y-auto p-4">
 		<!-- Main Navigation -->
-		<nav class="space-y-1 mb-6">
+		<nav class="mb-6 space-y-1">
 			{#each navigationItems as item}
 				<div class="sidebar-item {item.active ? 'active' : ''}">
-					<div class="w-4 h-4 bg-gray-400 rounded-sm mr-3"></div>
+					<div class="mr-3 h-4 w-4 rounded-sm bg-gray-400"></div>
 					<span class="flex-1">{item.name}</span>
 					{#if item.hasNotification}
-						<div class="w-2 h-2 bg-red-500 rounded-full"></div>
+						<div class="h-2 w-2 rounded-full bg-red-500"></div>
 					{/if}
 					{#if item.name === 'Dashboard'}
-						<div class="w-3 h-3 bg-gray-400 rounded-sm ml-2"></div>
+						<div class="ml-2 h-3 w-3 rounded-sm bg-gray-400"></div>
 					{/if}
 				</div>
 			{/each}
@@ -60,17 +60,17 @@
 
 		<!-- Reports Section -->
 		<div class="border-t border-gray-200 pt-4">
-			<div class="flex items-center justify-between mb-3">
+			<div class="mb-3 flex items-center justify-between">
 				<span class="text-sm font-medium text-gray-900">Reports</span>
-				<div class="w-3 h-3 bg-gray-400 rounded-sm"></div>
+				<div class="h-3 w-3 rounded-sm bg-gray-400"></div>
 			</div>
 			<nav class="space-y-1">
 				{#each reportItems as item}
 					<div class="sidebar-item {item.active ? 'active' : ''}">
-						<div class="w-4 h-4 bg-gray-400 rounded-sm mr-3"></div>
+						<div class="mr-3 h-4 w-4 rounded-sm bg-gray-400"></div>
 						<span class="flex-1 {item.isNew ? 'text-red-500' : ''}">{item.name}</span>
 						{#if item.hasNotification}
-							<div class="w-2 h-2 bg-red-500 rounded-full"></div>
+							<div class="h-2 w-2 rounded-full bg-red-500"></div>
 						{/if}
 					</div>
 				{/each}
@@ -78,17 +78,17 @@
 		</div>
 
 		<!-- Manage Folders -->
-		<div class="border-t border-gray-200 pt-4 mt-6">
+		<div class="mt-6 border-t border-gray-200 pt-4">
 			<div class="sidebar-item">
-				<div class="w-4 h-4 bg-gray-400 rounded-sm mr-3"></div>
+				<div class="mr-3 h-4 w-4 rounded-sm bg-gray-400"></div>
 				<span class="text-sm text-gray-600">Manage folders</span>
 			</div>
 		</div>
 	</div>
 
 	<!-- Bottom Icons -->
-	<div class="p-4 border-t border-gray-200 space-y-4">
-		<div class="w-6 h-6 bg-gray-400 rounded-sm"></div>
-		<div class="w-6 h-6 bg-gray-400 rounded-sm"></div>
+	<div class="space-y-4 border-t border-gray-200 p-4">
+		<div class="h-6 w-6 rounded-sm bg-gray-400"></div>
+		<div class="h-6 w-6 rounded-sm bg-gray-400"></div>
 	</div>
 </div>

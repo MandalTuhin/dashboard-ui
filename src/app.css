@@ -68,6 +68,9 @@ body {
 .bg-green-600 { background-color: #16a34a; }
 .bg-yellow-400 { background-color: #facc15; }
 
+/* Hover colors */
+.hover\:fill-pink-100:hover { fill: #fce7f3; }
+
 /* Text colors */
 .text-white { color: #ffffff; }
 .text-gray-300 { color: #d1d5db; }
