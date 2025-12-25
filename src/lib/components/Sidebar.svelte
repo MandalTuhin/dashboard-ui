@@ -13,7 +13,7 @@
 		{ name: 'Cloud3r', active: false, hasNotification: true },
 		{ name: 'Idioma', active: false },
 		{ name: 'Syllables', active: false },
-		{ name: 'X-Db', active: false }
+		{ name: 'Db', active: false }
 	];
 
 	const reportItems = [
