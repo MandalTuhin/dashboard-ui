@@ -39,7 +39,7 @@ This project is a **pixel-perfect recreation** of the provided dashboard design 
 ### Installation & Setup
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/MandalTuhin/dashboard-ui.git
 cd dashboard-ui
 
 # Install dependencies
@@ -84,8 +84,6 @@ src/
 1. **Sidebar Navigation**
    - Hierarchical menu structure
    - Active state indicators
-   - Notification badges
-   - Collapsible sections
 
 2. **Revenue Dashboard**
    - Large revenue display with decimal formatting
@@ -103,13 +101,12 @@ src/
    - Smooth line chart with SVG implementation
    - Bar chart representations
    - Interactive data points
-   - Gradient backgrounds and styling
 
-### Design Constraints Followed
+#### Note
+I have changed these for my personal reasons:
 - **Icons**: Replaced with colored rectangles/squares as specified
 - **Profile Pictures**: Implemented as solid black circles
 - **Interactive Elements**: Used `span` tags instead of button elements for personal health reasons
-- **Accessibility**: Clean semantic structure without role attributes
 
 ## 🛠️ Technical Highlights
 
@@ -172,7 +169,6 @@ Generates optimized static files in `.svelte-kit/output/`
 ## 👨‍💻 About the Developer
 
 This assignment demonstrates:
-- **Attention to Detail**: Pixel-perfect design implementation
 - **Modern Frontend Skills**: Latest Svelte 5 and Tailwind CSS
 - **Code Quality**: Clean, maintainable, and well-documented code
 - **Problem-Solving**: Creative solutions for design constraints
@@ -180,9 +176,14 @@ This assignment demonstrates:
 
 ## 📞 Contact
 
-For any questions about the implementation or technical decisions, please feel free to reach out.
+**Tuhin Mandal** *2024 B.Tech Graduate | Server-Side-Focused Full Stack Developer*
+
+- **Email**: [mandaltuhin7@gmail.com](mailto:mandaltuhin7@gmail.com)
+- **LinkedIn**: [Tuhin Mandal](https://www.linkedin.com/in/tuhin-mandal-2157102aa/)
+- **GitHub**: [@MandalTuhin](https://github.com/MandalTuhin)
+- **Portfolio**: [My Portfolio](https://tuhin-mandal-portfolio.vercel.app/)
+- **Availability**: Immediate (Full-Time / High-Intensity Roles)
 
 ---
 
 **Assignment completed for Acorn Globus Full Stack Developer Intern position**  
-*Quality over speed - every pixel matters* ✨
