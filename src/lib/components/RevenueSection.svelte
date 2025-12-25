@@ -80,14 +80,14 @@
 			<div class="text-xs text-gray-500 mb-1">Top sales</div>
 			<div class="text-2xl font-semibold text-gray-900 mb-2">{topSales.value}</div>
 			<div class="flex items-center space-x-2">
-				<div class="profile-pic w-6 h-6"></div>
+				<div class="profile-pic !w-6 !h-6"></div>
 				<span class="text-sm text-gray-600">{topSales.company}</span>
 				<div class="w-3 h-3 bg-gray-400 rounded-sm"></div>
 			</div>
 		</div>
 
 		<!-- Best Deal Card -->
-		<div class="card p-4 min-w-120 bg-gray-900 text-white">
+		<div class="card p-4 min-w-120 !bg-gray-900 !text-white">
 			<div class="flex items-center justify-between mb-2">
 				<span class="text-xs text-gray-300">Best deal</span>
 				<div class="w-3 h-3 bg-yellow-400 rounded-sm"></div>

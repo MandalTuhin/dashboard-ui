@@ -1,6 +1,6 @@
 <!-- Main layout for the dashboard application -->
 <script>
-	import '../app.css';
+	import './layout.css';
 </script>
 
 <main class="min-h-screen bg-gray-50">

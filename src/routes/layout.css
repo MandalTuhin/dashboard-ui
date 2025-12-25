@@ -1,3 +1,41 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* Custom dashboard styles */
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200;
+  }
+
+  .sidebar-item {
+    @apply flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 cursor-pointer transition-colors;
+  }
+
+  .sidebar-item.active {
+    @apply bg-pink-50 text-pink-600 font-medium;
+  }
+
+  .table-row {
+    @apply border-b border-gray-100 hover:bg-gray-50 transition-colors;
+  }
+
+  .profile-pic {
+    @apply w-8 h-8 bg-black rounded-full flex-shrink-0;
+  }
+
+  .icon-placeholder {
+    @apply w-4 h-4 bg-gray-400 rounded-sm flex-shrink-0;
+  }
+}
+
+/* Custom CSS for elements that need specific styling */
+@layer utilities {
+  .min-w-100 {
+    min-width: 100px;
+  }
+  
+  .min-w-120 {
+    min-width: 120px;
+  }
+}
