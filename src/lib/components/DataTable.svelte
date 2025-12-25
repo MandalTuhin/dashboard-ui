@@ -3,7 +3,7 @@
 	// Table data
 	const tableData = [
 		{
-			name: 'Armin A.',
+			name: 'Tuhin',
 			revenue: '$209,633',
 			leads: 411,
 			conversion: 118,
@@ -13,7 +13,7 @@
 			value: 29
 		},
 		{
-			name: 'Mikasa A.',
+			name: 'Kiro',
 			revenue: '$156,841',
 			leads: 54,
 			conversion: 103,

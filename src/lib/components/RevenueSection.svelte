@@ -11,11 +11,11 @@
 
 	const topSales = {
 		value: '72',
-		company: 'Mikasa'
+		company: 'Kiro'
 	};
 
 	const bestDeal = {
-		company: 'Rolf Inc.',
+		company: 'Rajesh Inc.',
 		starred: true
 	};
 
@@ -26,9 +26,9 @@
 	];
 
 	const salesReps = [
-		{ name: 'Armin A.', amount: '$209,633', percentage: '39.63%' },
-		{ name: 'Mikasa A.', amount: '$156,841', percentage: '29.65%' },
-		{ name: 'Eren Y.', amount: '$117,115', percentage: '22.14%' },
+		{ name: 'Tuhin', amount: '$209,633', percentage: '39.63%' },
+		{ name: 'Kiro', amount: '$156,841', percentage: '29.65%' },
+		{ name: 'Ramesh', amount: '$117,115', percentage: '22.14%' },
 		{ name: 'Other', amount: '$45,386', percentage: '8.58%' }
 	];
 </script>

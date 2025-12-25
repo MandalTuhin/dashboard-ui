@@ -2,9 +2,9 @@
 <script>
 	// User avatars data
 	const users = [
-		{ name: 'Armin A.', initials: 'AA' },
-		{ name: 'Eren Y.', initials: 'EY' },
-		{ name: 'Mikasa A.', initials: 'MA' }
+		{ name: 'Tuhin', initials: 'T' },
+		{ name: 'Ramesh', initials: 'R' },
+		{ name: 'Kiro', initials: 'K' }
 	];
 </script>
 

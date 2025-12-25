@@ -13,15 +13,15 @@
 				<div class="w-4 h-4 bg-gray-400 rounded-sm"></div>
 				<div class="flex items-center space-x-2">
 					<div class="profile-pic"></div>
-					<span class="text-sm text-gray-600">Armin A.</span>
+					<span class="text-sm text-gray-600">Tuhin</span>
 				</div>
 				<div class="flex items-center space-x-2">
 					<div class="profile-pic"></div>
-					<span class="text-sm text-gray-600">Eren Y.</span>
+					<span class="text-sm text-gray-600">Ramesh</span>
 				</div>
 				<div class="flex items-center space-x-2">
 					<div class="profile-pic"></div>
-					<span class="text-sm text-gray-600">Mikasa A.</span>
+					<span class="text-sm text-gray-600">Kiro</span>
 				</div>
 				<div class="w-6 h-6 bg-gray-400 rounded-sm"></div>
 			</div>

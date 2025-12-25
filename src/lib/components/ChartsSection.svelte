@@ -32,7 +32,7 @@
 	}
 
 	const salesData = [
-		{ name: 'Eren Y.', amount: '$117,115', score: 22, rate: '84', conversion: '0.79', percentage: '32%', value: 15 }
+		{ name: 'Ramesh', amount: '$117,115', score: 22, rate: '84', conversion: '0.79', percentage: '32%', value: 15 }
 	];
 </script>
 
