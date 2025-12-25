@@ -38,4 +38,8 @@
   .min-w-120 {
     min-width: 120px;
   }
+
+  .min-w-\[140px\] {
+    min-width: 140px;
+  }
 }

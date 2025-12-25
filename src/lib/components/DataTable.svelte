@@ -35,50 +35,40 @@
 
 <div class="space-y-6">
 	<!-- Sales Performance Table -->
-	<div class="card">
-		<div class="p-4 border-b border-gray-200">
+	<div class="bg-white rounded-lg border border-gray-200">
+		<div class="px-4 py-3 border-b border-gray-200">
 			<div class="flex items-center justify-between">
 				<h3 class="font-medium text-gray-900">Sales</h3>
-				<div class="flex items-center space-x-2">
-					<span class="text-sm text-gray-600">Revenue</span>
-					<span class="text-sm text-gray-600">Leads</span>
-					<span class="text-sm text-gray-600">KPI</span>
-					<span class="text-sm text-gray-600">W/L</span>
+				<div class="flex items-center space-x-6 text-xs text-gray-500">
+					<span>Revenue</span>
+					<span>Leads</span>
+					<span>KPI</span>
+					<span>W/L</span>
 				</div>
 			</div>
 		</div>
 		
-		<div class="overflow-x-auto">
-			<table class="w-full">
-				<tbody>
-					{#each tableData as row}
-						<tr class="table-row">
-							<td class="px-4 py-3">
-								<div class="flex items-center space-x-3">
-									<div class="profile-pic w-8 h-8"></div>
-									<span class="text-sm font-medium text-gray-900">{row.name}</span>
-								</div>
-							</td>
-							<td class="px-4 py-3 text-sm text-gray-900">{row.revenue}</td>
-							<td class="px-4 py-3">
-								<span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">{row.leads}</span>
-							</td>
-							<td class="px-4 py-3 text-sm text-gray-900">{row.conversion}</td>
-							<td class="px-4 py-3 text-sm text-gray-900">{row.rate}</td>
-							<td class="px-4 py-3 text-sm text-gray-900">{row.percentage}</td>
-							<td class="px-4 py-3">
-								<span class="bg-gray-800 text-white px-2 py-1 rounded text-xs">{row.score}</span>
-							</td>
-							<td class="px-4 py-3 text-sm text-gray-900">{row.value}</td>
-							{#if row.hasIssue}
-								<td class="px-4 py-3">
-									<div class="w-6 h-6 bg-red-500 rounded-full"></div>
-								</td>
-							{/if}
-						</tr>
-					{/each}
-				</tbody>
-			</table>
+		<div class="divide-y divide-gray-100">
+			{#each tableData as row}
+				<div class="px-4 py-3 flex items-center justify-between hover:bg-gray-50">
+					<div class="flex items-center space-x-3 flex-1">
+						<div class="profile-pic !w-6 !h-6"></div>
+						<span class="text-sm font-medium text-gray-900">{row.name}</span>
+					</div>
+					<div class="flex items-center space-x-6 text-sm">
+						<span class="text-gray-900 w-20 text-right">{row.revenue}</span>
+						<span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs w-12 text-center">{row.leads}</span>
+						<span class="text-gray-900 w-12 text-center">{row.conversion}</span>
+						<span class="text-gray-900 w-12 text-center">{row.rate}</span>
+						<span class="text-gray-900 w-12 text-center">{row.percentage}</span>
+						<span class="bg-gray-800 text-white px-2 py-1 rounded text-xs w-8 text-center">{row.score}</span>
+						<span class="text-gray-900 w-8 text-center">{row.value}</span>
+						{#if row.hasIssue}
+							<div class="w-4 h-4 bg-red-500 rounded-full"></div>
+						{/if}
+					</div>
+				</div>
+			{/each}
 		</div>
 	</div>
 

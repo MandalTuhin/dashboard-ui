@@ -63,42 +63,41 @@
 	</div>
 
 	<!-- Main Revenue Display -->
-	<div class="flex items-center space-x-6">
-		<div>
-			<div class="text-4xl font-light text-gray-900">{revenueData.total}</div>
-			<div class="flex items-center space-x-2 mt-1">
-				<span class="text-red-500 text-sm">{revenueData.change}</span>
-				<span class="text-red-500 text-sm">{revenueData.changeAmount}</span>
-			</div>
+	<div class="flex items-baseline space-x-2">
+		<div class="text-4xl font-light text-gray-900">{revenueData.total}</div>
+		<div class="text-4xl font-light text-gray-400">.82</div>
+		<div class="flex items-center space-x-2 ml-4">
+			<span class="bg-red-100 text-red-600 px-2 py-1 rounded text-sm font-medium">{revenueData.change}</span>
+			<span class="text-red-500 text-sm">{revenueData.changeAmount}</span>
 		</div>
 	</div>
 
 	<!-- Cards Row -->
-	<div class="flex items-center space-x-4">
+	<div class="flex items-start space-x-4">
 		<!-- Top Sales Card -->
-		<div class="card p-4 min-w-120">
+		<div class="bg-white rounded-lg p-3 border border-gray-200 min-w-[140px]">
 			<div class="text-xs text-gray-500 mb-1">Top sales</div>
-			<div class="text-2xl font-semibold text-gray-900 mb-2">{topSales.value}</div>
+			<div class="text-xl font-semibold text-gray-900 mb-2">{topSales.value}</div>
 			<div class="flex items-center space-x-2">
-				<div class="profile-pic !w-6 !h-6"></div>
-				<span class="text-sm text-gray-600">{topSales.company}</span>
-				<div class="w-3 h-3 bg-gray-400 rounded-sm"></div>
+				<div class="profile-pic !w-5 !h-5"></div>
+				<span class="text-xs text-gray-600">{topSales.company}</span>
+				<div class="w-2 h-2 bg-gray-400 rounded-sm ml-auto"></div>
 			</div>
 		</div>
 
 		<!-- Best Deal Card -->
-		<div class="card p-4 min-w-120 !bg-gray-900 !text-white">
+		<div class="bg-gray-900 text-white rounded-lg p-3 min-w-[140px] relative">
 			<div class="flex items-center justify-between mb-2">
 				<span class="text-xs text-gray-300">Best deal</span>
 				<div class="w-3 h-3 bg-yellow-400 rounded-sm"></div>
 			</div>
-			<div class="text-sm font-medium">{bestDeal.company}</div>
-			<div class="w-4 h-4 bg-white rounded-full mt-2"></div>
+			<div class="text-sm font-medium mb-2">{bestDeal.company}</div>
+			<div class="w-4 h-4 bg-white rounded-full"></div>
 		</div>
 
 		<!-- Metrics Cards -->
 		{#each metrics as metric}
-			<div class="card p-4 min-w-100">
+			<div class="bg-white rounded-lg p-3 border border-gray-200 min-w-[100px]">
 				<div class="text-xs text-gray-500 mb-1">{metric.label}</div>
 				<div class="text-lg font-semibold text-gray-900 mb-1">{metric.value}</div>
 				<div class="text-xs text-green-600">{metric.change}</div>
