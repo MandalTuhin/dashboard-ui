@@ -8,12 +8,12 @@
 <div class="flex h-screen bg-gray-50">
 	<!-- Sidebar -->
 	<Sidebar />
-	
+
 	<!-- Main Content Area -->
-	<div class="flex-1 flex flex-col overflow-hidden">
+	<div class="flex flex-1 flex-col overflow-hidden">
 		<!-- Header -->
 		<Header />
-		
+
 		<!-- Main Content -->
 		<MainContent />
 	</div>
